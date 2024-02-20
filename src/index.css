@@ -23,7 +23,7 @@
 }
 .left-box{
 flex: 1;
-background: url("bg-img.png") center no-repeat;
+background: url("../src/assets/bg-img.png") center no-repeat;
 background-size: cover;
 border-radius: 4px;
 }
