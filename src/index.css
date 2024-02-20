@@ -6,7 +6,6 @@
 
 #root {
   min-height: 100vh;
-  background-color: #101734;
   color: #fff;
   display: flex;
   align-items: center;
@@ -14,20 +13,32 @@
 }
 
 .container {
-  height: 500px;
-  width: 400px;
-  background-color: #3d3a71;
+  height: 400px;
+  width: 600px;
+  background-color: #2980b9;
   border-radius: 8px;
   padding: 15px;
-  box-shadow: 0px 2px 10px;
+  box-shadow: 0px 80px 50px #444;
+  display: flex;
+}
+.left-box{
+flex: 1;
+background: url("bg-img.png") center no-repeat;
+background-size: cover;
+border-radius: 4px;
 }
 
+.right-box{
+  flex: 1;
+  padding: 10px;
+}
 h2 {
   padding: 10px;
   text-align: center;
   border: 1px dashed #fff;
   border-radius: 4px;
   margin-bottom: 20px;
+  text-transform: uppercase;
 }
 
 .input-group {
@@ -43,6 +54,7 @@ h2 {
   border-radius: 4px;
   padding: 10px 5px;
   width: 100%;
+  border: none;
 }
 
 .output-group {
@@ -55,7 +67,7 @@ h2 {
 .output-group p span {
   font-weight: 900;
   font-size: 1.2rem;
-  color: yellow;
+  color: #f1c40f;
 }
 
 .btn-group {
@@ -71,10 +83,12 @@ h2 {
   outline: none;
   border: none;
   cursor: pointer;
+  font-weight: 600;
+  letter-spacing: 1px;
 }
 
 .btn-group button:first-child {
-  background-color: rgb(252, 156, 172);
+  background-color: #f1c40f;
   color: #fff;
 }
 
@@ -89,6 +103,11 @@ h2 {
   margin-top: 20px;
 }
 
-.danger {
-  border: 1px solid red;
+@media  screen and (max-width: 668px){
+  #root{
+    padding: 20px;
+  }
+  .left-box{
+    display: none;
+  }
 }

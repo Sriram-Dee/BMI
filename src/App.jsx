@@ -46,6 +46,10 @@ function App() {
   return (
     <>
       <div className="container">
+        <div className="left-box">
+
+        </div>
+        <div className="right-box">
         <h2>Calculate BMI</h2>
         <div className="input-group">
           <label htmlFor="height">Height (Cm) </label>
@@ -81,6 +85,7 @@ function App() {
           </div>
         )}
         <p className="errorMsg">{errorMsg}</p>
+        </div>
       </div>
     </>
   );
